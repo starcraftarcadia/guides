@@ -1,0 +1,1 @@
+For actual information, see https://github.com/starcraftarcadia/guides/wiki/Starcraft-Arcadia-Guides
