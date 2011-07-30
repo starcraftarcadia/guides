@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>How To Setup Mumble for Penny Arcade's Starcraft II Server</title>
+<meta http-equiv="Content-Language" content="English" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="colorbox.css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.colorbox-min.js" ></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("a.box").colorbox();
+	});
+</script>
+</head>
+<body>
+<div id="wrap">
+
+<div id="top"></div>
+
+<div id="content">
+
+<div class="header">
+<a name="top"></a>
+<h1>How To Setup Mumble</h1>
+<h2>For Penny Arcade's Starcraft II Mumble Server</h2>
+<h2>Contact exoplasm@exosquad.net to donate to the server!</h2>
+</div>
+
+<div class="breadcrumbs">
+Click on images to enlarge
+</div>
+
+<div class="middle">
+<h2>Live Server View</h2>
+<script type="text/javascript" src="http://api.commandchannel.com/mumbleViewer/mumbleViewer.js"></script>
+<link rel="stylesheet" type="text/css" href="http://api.commandchannel.com/mumbleViewer/mumbleViewer.css" />
+<script type="text/javascript">
+    var mumbleChannelViewerJsonUri = "http://api.commandchannel.com/cvp.json?email=exoplasm@theandroidnation.net&apiKey=94df0b6e-3697-43fb-b9f6-08efe9cae19b&callback=?";
+</script>
+<div id="mumbleViewer">
+    <noscript><p style="text-align: center; color: #f00;">JavaScript is required to use the Mumble Channel Viewer.</noscript>
+    <div id="mumbleTree"></div>
+    <a href="http://commandchannel.com/" class="plug"><img src="http://api.commandchannel.com/mumbleViewer/commandChannel.png" alt="Mumble Server powered by Command Channel" /></a>
+    <div id="mumbleLoading">
+        <span>Loading...</span>
+    </div>
+</div>
+	<a name="1"></a>					
+	<h2>Download Mumble</h2>
+	
+	<p>Head on over to <a href="http://mumble.sourceforge.net" target="_blank" title="Opens in a new window">http://mumble.sourceforge.net</a> and download version 1.2.2 (or newer).</p>
+	
+	<a href="images/get-mumble.png" class="box"><img src="images/get-mumble.png" alt="Download Mumble" title="You want the newest stable version!" class="thumb"/></a>
+
+
+	<a name="2"></a>
+	<h2>Install Mumble</h2>
+	
+	<p>Run the installer. You can press next all the way through without looking if you want. There really isn't anything that needs to be changed.</p>
+
+	<a name="3"></a>
+	<h2>Start Mumble</h2>
+	
+	<p>Mumble should start automatically when it is done installing, but take note that there are two icons by default. You don't want to use the backwards-compatible version of Mumble when connecting to my server.</p>
+
+	
+
+	<a href="images/mumble-icons.png" class="box"><img src="images/mumble-icons.png" alt="Mumble Desktop Icons" title="Don't use the backwards-compatible version" class="thumb"/></a>
+
+	<p>The first time you run mumble it will ask if you want to run the audio wizard. You should click yes unless you want everyone to hear you breathing heavily into your mic that picks up every sound from your speakers. Note that this will cause everyone to laugh at you for not knowing how to do voice chat properly.</p>
+	
+	
+	<a href="images/mumble-first-start.png" class="box"><img src="images/mumble-first-start.png" alt="Mumble first run" title="Click yes!" class="thumb"/></a>
+	
+	<a name="4"></a>
+	<h2>Audio Setup Wizard</h2>
+	
+	<p>Use the audio wizard to get your audio in/out just right. You can also enable Push To Talk if that's your thing.</p>
+	<a href="images/audio-wizard.png" class="box"><img src="images/audio-wizard.png" alt="Audio Setup Wizard" title="" class="thumb"/></a>
+	
+	<a name="5"></a>
+	<h2>Certificate Management</h2>
+	
+	<p>Mumble uses secure connections which is good I guess. No one will be able to evesdrop on our amazing strategies or boring job stories. Go with the default of automatic creation because it's easy and works fine.</p>
+	<a href="images/certs.png" class="box"><img src="images/certs.png" alt="Certificate Management" title="" class="thumb"/></a>
+	
+	<a name="6"></a>
+	<h2>Connect to the server</h2>
+	
+	<p>Okay we are getting close to being done with this setup process. You're going to want to add a new server since mine isn't listed publicy. It will automatically show up under your favorite servers listing. Fill it out like the image below. Note that the server name can be anything you want. The username is obviously what you want people to see when you're in the server.</p>
+	
+	<a href="images/server-connect-window.png" class="box"><img src="images/server-connect-window.png" alt="Server Connect Window" title="" class="thumb"/></a>
+	<a href="images/add-server.png" class="box"><img src="images/add-server.png" alt="Add Server Window" title="" class="thumb"/></a>
+	<a href="images/server-window-again.png" class="box"><img src="images/server-window-again.png" alt="Server Connect Window" title="" class="thumb"/></a>
+	
+	<a name="7"></a>
+	<h2>Almost Connected! Certificate warning!</h2>
+	
+	<p>There isn't a way for me to set up a "valid" certificate on this server, but that doesn't matter. A self-signed certificate is no less secure than one signed by a central authority. Unless you see this message again later on, there is little to no chance that the connection has been compromised. But we're not talking about high value financial details or anything, so it's not really a big deal anyway. Click yes to store the certificate and not be warned about it again (unless it changes, which it shouldn't).</p>
+	<a href="images/cert-error.png" class="box"><img src="images/cert-error.png" alt="Certificate Warning" title="" class="thumb"/></a>
+	
+	<a name="8"></a>
+	<h2>Password</h2>
+	
+	<p>You will get an error about having the wrong password for an unregistered user. Just type in the usual password (<i>wang</i>) and you're good to go. You don't have to register or anything like that and it won't bother you about it anymore.</p>
+	<a href="images/password.png" class="box"><img src="images/password.png" alt="Password Warning" title="" class="thumb"/></a>
+	
+	<a name="9"></a>
+	<h2>Main Window</h2>
+	
+	<p>Okay, so you are connected and everything is good to go! You can at this point stop reading and enjoy the voice chat, however if you follow on there are some more options to configure to get rid of some annoyances.</p>
+	<a href="images/main-window.png" class="box"><img src="images/main-window.png" alt="Mumble Main Window" title="" class="thumb"/></a>
+	
+	<a name="10"></a>
+	<h2>Configuration</h2>
+	
+	<p>Before configuring anything else, you should tick the "Advanced" checkbox to reveal more options. I really don't know why they don't have this on by default.</p>
+	<a href="images/configuration.png" class="box"><img src="images/configuration.png" alt="Mumble Configuration Window" title="" class="thumb"/></a>
+	
+	<a name="11"></a>
+	<h2>Messages Configuration</h2>
+	
+	<p>This is where you control what kind of messages or notifications you receive. You can toggle text-to-speech, audio files, balloon notification (not cool while in-game), and console. Console is what outputs to the "chat" part of the Mumble window. You should leave that on for text messages so you can read what people typed if the robot voice wasn't audible.</p>
+	<a href="images/messages-config.png" class="box"><img src="images/messages-config.png" alt="Messages Configuration" title="" class="thumb"/></a>
+	
+	<a name="12"></a>
+	<h2>Hotkeys (Shortcuts)</h2>
+	
+	<p>This is where you can configure hotkeys to do various things. One important hotkey to set is the deafen yourself. We use this a lot for the players in a match so that they can't hear the spectators. The alternative is to alt-tab before/after your matches or let a non-lazy admin-type deafen you, the latter leaving you deaf until they remember that they did that.</p>
+	<a href="images/hotkeys.png" class="box"><img src="images/hotkeys.png" alt="Shortcuts Configuration" title="" class="thumb"/></a>
+	
+	<a name="13"></a>
+	<h2>Overlay</h2>
+	
+	<p>This is the one that EVERYONE complains about as soon as they get in game. The overlay is a neat thingy that shows you who is talking while in-game. It shows their name and avatar (if they set one) on top of the game. By default it is jammed up in the top right corner which usually covers resource counters. It also shows everyone, regardless of their status, by default. You can use the sliders to adjust its position. Moving the right slider down just a tad works for me. Also make sure to set it to only show people who are talking, because you don't want a ginormous list of names covering up half your screen all the time.</p>
+	<a href="images/overlay-config.png" class="box"><img src="images/overlay-config.png" alt="Overlay Configuration" title="" class="thumb"/></a>
+	<br />
+	<a href="#top">Back to top</a>
+</div>
+		
+<div class="right">
+		
+<h2>Navigation</h2>
+
+<ul>
+<li><a href="#1">Download Mumble</a></li>
+<li><a href="#2">Install Mumble</a></li>
+<li><a href="#3">Start Mumble</a></li>
+<li><a href="#4">Audio Setup Wizard</a></li>
+<li><a href="#5">Certificate Management</a></li>
+<li><a href="#6">Connect to the server</a></li>
+<li><a href="#7">Certificate warning</a></li>
+<li><a href="#8">Password</a></li>
+<li><a href="#9">Main Window</a></li>
+<li><a href="#10">Configuration</a></li>
+<li><a href="#11">Messages Configuration</a></li>
+<li><a href="#12">Hotkeys (Shortcuts)</a></li>
+<li><a href="#13">Overlay</a></li>
+</ul>
+		
+</div>
+
+<div id="clear"></div>
+
+</div>
+
+<div id="bottom"></div>
+
+</div>
+
+<div id="footer">
+Design by <a href="http://www.minimalistic-design.net">Minimalistic Design</a>
+</div>
+
+</body>
+</html>
